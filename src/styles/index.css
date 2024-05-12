@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html {
+    --ct-background: rgb(24, 24, 37);
+    --ct-surface: rgb(30, 30, 46);
+    --text: rgb(255, 255, 255);
+    --subtext: rgb(186, 194, 222);
+    --accent: rgb(137, 220, 235);
+}
+
+body {
+    background-color: var(--ct-background);
+    color: var(--text);
+}
+
+a {
+    color: var(--accent)
+}
+
+strong {font-weight:bold !important;}
+
+.accent {
+    color: var(--accent);
+}
+
+/* Container! uwu */
+
+.container {
+    position: absolute;
+    height: 641px;
+    width: 900px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    background-color: var(--ct-surface);
+    border-radius: 5px;
+    border: 2.4px solid; border-color: var(--accent);
+}
+
+.topcontainer {
+    height: 125px;
+}
+
+.aboutme {
+    position: relative;
+    height: 450px;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Content in .bannercontainer */
+
+#name {
+    position: absolute;
+    left: 162px;
+    top: 55px;
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+#pronouns {
+    position: absolute;
+    left: 162px;
+    top: 90px;
+    font-size: 1.25rem;
+}
+
+#avatar {
+    width: 110px; height: 110px; object-fit: cover; object-position: 100% 0;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    border: 2px solid;
+    border-radius: 9px;
+    border-color: var(--accent);
+}
+
+.topcontainer * {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Desktop Nav bar */
+
+.desktop-nav {
+    font-size: 1.2rem
+}
+
+.desktop-nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.desktop-nav li {
+    float: left
+}
+
+.desktop-nav ul {
+    position: absolute;
+    right: 32px;
+    top: 65px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* About me UWU */
+
+.aboutme * {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    font-style: normal;
+    font-size: 1.05rem;
+}
+
+.aboutme li {
+    padding-bottom: 5px;
+}
+
+.aboutme li::marker {
+        color: var(--accent);
+        content: '> ';
+}

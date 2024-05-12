@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<Layout title="Social- Littlecutecat">
+	<head>
+		<link href="src/styles/social.css" rel="stylesheet" type="text/css"/> 
+		<script src="https://kit.fontawesome.com/f5eaed05e8.js" crossorigin="anonymous"></script>
+        <ViewTransitions />
+	</head>
+	<div class="container">
+		<div class="topcontainer">
+			<div id="name">Mikyu</div>
+			<div id="pronouns">(she/her)</div>
+			<img src="src/assets/pfp.jpg" id="avatar">
+			<div class="desktop-nav">
+				<ul>
+					<li><a href="/">About</a></li>
+					<li><a href="#"><strong>Socials</strong></a></li>
+					<li><a href="https://github.com/Mikyuwu"></a>>Github</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="social">
+			<ul>
+				<li><a href="https://github.com/Mikyuwu" title="Github" target=”_blank”><i class="fa fa-github"></i></a></li>
+				<li><a href="https://twitter.com/Mikyu68" title="Twitter" target=”_blank”><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.reddit.com/user/Mikyu__/" title="Reddit" target=”_blank”><i class="fa fa-reddit"></i></a></li>
+				<li><a href="https://discordapp.com/users/288380125060399104" title="Discord" target=”_blank”><i class="fa-brands fa-discord"></i></a></li>
+				<li><a href="https://tech.lgbt/@Mikyu" title="Mastodon" target=”_blank”><i class="fa-brands fa-mastodon"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</Layout>

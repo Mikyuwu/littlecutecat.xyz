@@ -1,0 +1,39 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Home - Littlecutecat">
+	<head>
+		<link href="src/styles/index.css" rel="stylesheet" type="text/css"/> 
+		<ViewTransitions />
+		
+	</head>
+	<div class="container">
+		<div class="topcontainer">
+			<div id="name">Mikyu</div>
+			<div id="pronouns">(she/her)</div>
+			<img src="src/assets/pfp.jpg" id="avatar">
+			<div class="desktop-nav">
+				<ul>
+					<li><a href="#"><strong>About</strong></a></li>
+					<li><a href="social">Socials</a></li>
+					<li><a href="https://github.com/Mikyuwu">Github</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="aboutme">
+			<p>Hi! I'm Mikyu, but you can also call me Aurore. I go by she/her and live in France! I'm a student and work on little projects primarily using Python and sometimes HTML, CSS. </p>
+                <p>The tech world has my heart, and I'm all about celebrating the advancement made everyday ヾ(≧▽≦*). I'm love Vtubers like Gawr Gura, Mumei, and IronMouse, and I always vibe to Jpop tunes and love getting lost in Vocaloid melodies!</p>
+                <p>I'm a huge fan of video games and try to play across all genres. Currently, my favorites include Minecraft, Genshin Impact, and Osu!. I really enjoy modding games and hardware (such as the Wii and the 3DS) and customizing applications like Spotify and Discord.</p>
+                <p>I did a few projects.. I've been limited by ti.. my motivation.</p>
+                <ul>
+                    <li><span class="accent">OpenBedwarsOverlay (Not finished)</span>: I just wanted to create one because I wanted to use one open-source, and I wanted to code so yeah</li>
+                    <li><span class="accent">The Dungeon Discord Bot</span>: A little suggestion bot, custom made for a server. Now discountinued</li>
+                    <li><span class="accent">This site</span>: I wanted to make a personal site for a long time and I finally DID IT! Multiple version exist, this is actually the V2 but you can find the other version on my Github!</li>
+                </ul>
+                <p>Credits: <a href="https://lily.pet" target=”_blank”>Lily.pet</a> for the base of the site (Huge inspiration!), <a href="https://github.com/adryd325/oneko.js" target=”_blank”>Adryd</a> for the Oneko script!</p>
+		</div>
+	</div>
+	<script src="../script/oneko.js"></script>
+</Layout>
